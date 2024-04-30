@@ -44,7 +44,7 @@
     <div class="content">
         <h1 style="text-align: justify;"><strong><span style="font-size:10.5pt;">SUBDIRECTOR DEL CENTRO ESTATAL DE JUSTICIA ALTERNATIVA CON SEDE EN ESTA CIUDAD DE LE&Oacute;N, GUANAJUATO</span></strong></h1>
         <div id="parametros-url"></div> <!-- Aquí se incluirán los parámetros de la URL -->
-        <h1 style="text-align: justify;"><strong><span style="font-size:10.5pt;">PRESENTE: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong><strong><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span></strong><strong><span style="font-size:10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></strong></h1>
+        <h1 style="text-align: justify;"><strong><span style="font-size:10.5pt;">PRESENTE: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong><strong><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span></strong><strong><span style="font-size:10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></strong></h1>
         <h1 style="text-align: justify;"><strong><span style="font-size:10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span id="ACTOR"></span>,&nbsp;</span></strong><span style="font-size:10.5pt;">mexicana, mayor de edad, casada, quien se identifica con credencial para votar con clave VZFRMY87062011M300 con domicilio para oir y recibir todo tipo de notificaciones el ubicado en <span id="DOMICILIO_PROC"></span>; con numero para contacto 4772304380, &nbsp;en mi car&aacute;cter de endosataria en <span id="TIPO_ENDOSO"></span>; del C. <span id="BENEFICIARIO"></span>; comparezco ante usted con el debido respeto a efecto de exponer: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span></h1>
         <h1 style="text-align: justify;"><span style="font-size:10.5pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Que por medio del presente ocurso vengo a solicitar de sus servicios de mediaci&oacute;n y conciliaci&oacute;n que presta el centro estatal de justicia alternativa, entre la suscrita y &nbsp;<span id="DEMANDADO"></span>; y <span id="AVAL"></span>; quienes tienen su domicilio en <span id="DOMICILIO"></span>; y <span id="DOMICILIO2"></span>; en su car&aacute;cter de deudor principal y aval, respectivamente, ello del siguiente asunto: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span></h1>
         <h1 style="text-align: justify;"><span style="font-size:10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp;&nbsp;</span><span style="font-size:10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-size:10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ANTECEDENTE</span></strong></h1>
@@ -64,38 +64,33 @@
             return resultados === null ? '' : decodeURIComponent(resultados[1].replace(/\+/g, ' '));
         }
 
-var actor = obtenerParametro('ACTOR');
-var domicilioProcesal = obtenerParametro('DOMICILIO_PROC');
-var tipoEndoso = obtenerParametro('TIPO_ENDOSO');
-var beneficiario = obtenerParametro('BENEFICIARIO');
-var demandado = obtenerParametro('DEMANDADO');
-var aval = obtenerParametro('AVAL');
-var domicilio = obtenerParametro('DOMICILIO');
-var domicilio2 = obtenerParametro('DOMICILIO2');
-var documento = obtenerParametro('DOCUMENTO');
-var fechaSuscripcion = obtenerParametro('FECHA_SUSCRIPCION');
-var suertePrincipal = obtenerParametro('SUERTE_PRINCIPAL');
-var numLetras = obtenerParametro('NUM_LETRAS');
+        // Obtener el valor de cada parámetro de la URL
+        var actor = obtenerParametro('ACTOR');
+        var domicilioProcesal = obtenerParametro('DOMICILIO_PROC');
+        var tipoEndoso = obtenerParametro('TIPO_ENDOSO');
+        var beneficiario = obtenerParametro('BENEFICIARIO');
+        var demandado = obtenerParametro('DEMANDADO');
+        var aval = obtenerParametro('AVAL');
+        var domicilio = obtenerParametro('DOMICILIO');
+        var domicilio2 = obtenerParametro('DOMICILIO2');
+        var documento = obtenerParametro('DOCUMENTO');
+        var fechaSuscripcion = obtenerParametro('FECHA_SUSCRIPCION');
+        var suertePrincipal = obtenerParametro('SUERTE_PRINCIPAL');
+        var numLetras = obtenerParametro('NUM_LETRAS');
 
-    // Convertir la cadena resumen en un array separado por saltos de línea
-    var lineasResumen = resumen.split('\n');
-    
-// Adding <span> elements with IDs for each variable directly to the document body
-document.body.innerHTML = 
-  `<span id="actor">${actor}</span>
-   <span id="domicilioProcesal">${domicilioProcesal}</span>
-   <span id="tipoEndoso">${tipoEndoso}</span>
-   <span id="beneficiario">${beneficiario}</span>
-   <span id="demandado">${demandado}</span>
-   <span id="aval">${aval}</span>
-   <span id="domicilio">${domicilio}</span>
-   <span id="domicilio2">${domicilio2}</span>
-   <span id="documento">${documento}</span>
-   <span id="fechaSuscripcion">${fechaSuscripcion}</span>
-   <span id="suertePrincipal">${suertePrincipal}</span>
-   <span id="numLetras">${numLetras}</span>`;
-
-        `;
+        // Llenar los elementos con los valores de los parámetros
+        document.getElementById('ACTOR').innerText = actor;
+        document.getElementById('DOMICILIO_PROC').innerText = domicilioProcesal;
+        document.getElementById('TIPO_ENDOSO').innerText = tipoEndoso;
+        document.getElementById('BENEFICIARIO').innerText = beneficiario;
+        document.getElementById('DEMANDADO').innerText = demandado;
+        document.getElementById('AVAL').innerText = aval;
+        document.getElementById('DOMICILIO').innerText = domicilio;
+        document.getElementById('DOMICILIO2').innerText = domicilio2;
+        document.getElementById('DOCUMENTO').innerText = documento;
+        document.getElementById('FECHA_SUSCRIPCION').innerText = fechaSuscripcion;
+        document.getElementById('SUERTE_PRINCIPAL').innerText = suertePrincipal;
+        document.getElementById('NUM_LETRAS').innerText = numLetras;
     </script>
 </body>
 </html>
